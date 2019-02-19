@@ -5,8 +5,8 @@
 html {
     font-family: 'Open Sans', sans-serif;
     background-color: azure;
-    font size: 1em; /* (1em = 16px) */
-    line-height: 1.618em ; /* (1.618em == 25.888px = 16px * 1.618em)*/
+    font-size: 1em; /* Base (1em = 16px) */
+    line-height: 1.618em; /* (1.618em == 25.888px = 16px * 1.618em)*/
 }
 
 label {
@@ -15,12 +15,31 @@ label {
     text-align: center;
 }
 
+/* 480px Break Point 0: Default*/
+@media screen and (max-width: 479px) {
+    body {
+        font-size: 1em; /* (1em = 16px) */
+        line-height: 1.618em; /* (1.618em == 25.888px = 16px * 1.618em)*/
+    }
+    
+    label {
+        display: inline-block;
+        color: white;
+        background-color: skyblue;
+    }
+
+    div {
+        display: inline;
+    }
+}
+
 /* 480px Break Point 1: Extra Small Devices, Phones */
 @media screen and (min-width: 480px) {
     body {
-        /* font size is default */
-        /* line-height is default */
+        font-size: 1.618em; /* (1.618em = 25.888px) */
+        line-height: 2.618em ; /* (2.618em == 41.887px = 25.888px * 1.618em)*/
     }
+
     label {
         display: inline-block;
         color: white;
@@ -35,13 +54,15 @@ label {
 /* 768px Break Point 2: Small Devices, Tablets */
 @media screen and (min-width: 768px) {
     body {
-        font size: 1.618em; /* (1em = 16px) */
-        line-height: 2.618em ; /* (2.618em == 41.887px = 25.888px * 1.618em)*/
+        font-size: 4.236em; /* (4.236em = 67.77px) */
+        line-height: 6.854em, ; /* (2.618em == 109.66px = 41.887px * 1.618em)*/
     }
+
     label {
         display: inline-block;
         color: white;
         background-color: skyblue;
+
     }
 
     div {
@@ -51,12 +72,15 @@ label {
 
 /* 992px Break Point 3: Medium Devices, Desktops */
 @media screen and (min-width: 992px) {
+    body {
+        font-size: 4.236em; /* (4.236em = 67.77px) */
+        line-height: 6.854em, ; /* (2.618em == 109.66px = 41.887px * 1.618em)*/
+    }
+
     label {
         display: inline-block;
         color: white;
         background-color: skyblue;
-        margin-right: 5px;
-        font-size: 1.3em;
     }
 
     div {

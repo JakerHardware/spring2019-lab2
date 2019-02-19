@@ -1,1 +1,60 @@
 /* stylalize the form between a scroll friendly mobile first version, and a sectioned desktop version.*/
+html {
+    line-height: 1.618em;
+    font-family: 'Open Sans', sans-serif;
+    background-color: azure;
+}
+
+label {
+    display: block;
+    background-color: white;
+    text-align: center;
+}
+/* 480px Break Point 1: Extra Small Devices, Phones */
+@media screen and (min-width: 480px) {
+    label {
+        display: inline-block;
+        color: white;
+        background-color: skyblue;
+        margin-right: 5px;
+        font-size: 1.3em;
+    }
+
+    div {
+        display: inline;
+
+    }
+}
+
+/* 768px Break Point 2: Small Devices, Tablets */
+@media screen and (min-width: 768px) {
+    label {
+        display: inline-block;
+        color: white;
+        background-color: skyblue;
+        margin-right: 5px;
+        font-size: 1.3em;
+    }
+
+    div {
+        display: inline;
+
+    }
+}
+
+/* 992px Break Point 3: Medium Devices, Desktops */
+
+@media screen and (min-width: 992px) {
+    label {
+        display: inline-block;
+        color: white;
+        background-color: skyblue;
+        margin-right: 5px;
+        font-size: 1.3em;
+    }
+
+    div {
+        display: inline;
+
+    }
+}

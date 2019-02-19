@@ -2,7 +2,7 @@
 ###### By: Jacob Huebner - ITMD 362 Spring 2019 
 
 For this lab, you will form Semantics and Normalized Styles.
-You will w, x, and y and z. \
+You will w, x, and y and z.
 Follow the steps below exactly in order to receive full credit.
 
 ## Requirements

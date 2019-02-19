@@ -18,36 +18,35 @@
     <!-- 3. date of birth -->
 
     <!-- 4. submit button -->
-    
+
     <!-- Header -->
     <header>
       <h1>Lab 2</h1>
       <p>Form Semantics and Normalized Styles.</p>
     </header>
-    
-    <!-- Section 1 -->
+
+    <!-- Parts 1 -->
     <section> 
       <form action="address here" method="post">
-      
         <fieldset>
           <legend>Info Box</legend>
           <h2>My Info</h2>
           <p>Please enter your information in the fields below.</p>
-          
+
           <!-- 1. user's email adress -->
-          <p>
+          <div>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email_field" placeholder="email here">
-          </p>
-          
+          </div>
+
           <!-- 2. phone number -->
-          <p>
+          <div>
             <label for="phonenumber">Phone Number:</label>
             <input type="text" id="phonenumber" name="phone_field" placeholder="phone number here">
-          </p>
-          
+          </div>
+
           <!-- 3. date of birth -->
-          <p>
+          <div>
             <label for="age">Age:</label>
             <select name="age_field" id="age">
               <option value="under 18">under 18</option>
@@ -58,16 +57,25 @@
               <option value="55 - 64">55 - 64</option>
               <option value="65 and over">65 and over</option>
             </select>
-          </p>
-          
-          <!-- 4. submit button -->
+          </div>
 
         </fieldset>
+
+        <!-- 4. submit button -->
+        <p></p>
+        <div>
+          <label for="submitbutton">Submit: </label>
+          <input type="submit" id="submitbutton" value="SUBMIT">
+          <label for="submitbutton">Reset: </label>
+          <input type="reset" id="resetbutton" value="RESET">
+        </div>
+
+        <input type="hidden" name="hidden_field" value="Jacob Huebner">
         
       </form>
-      
+
     </section>
-    
+
     <!-- footer -->
     <footer>
       <address>

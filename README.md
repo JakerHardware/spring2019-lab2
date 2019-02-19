@@ -1,15 +1,14 @@
 # Lab 2
 ###### By: Jacob Huebner - ITMD 362 Spring 2019 
 
-For this lab, you will fork, clone, and commit and push changes to a
-remote GitHub repository. Follow the steps below exactly in order to receive full credit.
+For this lab, you will form Semantics and Normalized Styles.
+You will w, x, and y and z. \
+Follow the steps below exactly in order to receive full credit.
 
 ## Requirements
 
 1. [ ] In the `index.html` file in this directory, create a form that asks for
 a user’s email address, phone number, and date of birth. There should also be a submit button.
-
-  Be sure to:
 
   * Use the best HTML `<input>` types
   * Use additional HTML `<input>` attributes to maximize user exprience

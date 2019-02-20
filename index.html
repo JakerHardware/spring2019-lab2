@@ -9,67 +9,67 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
   <body>
-    <!-- Header -->
-    <header>
-      <h1>Lab 2: Form Semantics and Normalized Styles</h1>
-      <p></p>
-    </header>
+    <div id="wrapper">
+      <!-- Header -->
+      <header>
+        <h1>Lab 2</h1>
+        <p>Form Semantics and Normalized Styles</p>
+      </header>
 
-    <!-- Create a form that asks for user email address, phone number, and DOB-->
-    <section> 
-      <form action="#null" method="post">
-        <fieldset>
-          <legend>Info Box</legend>
-          <h2>My Info</h2>
-          <p>Please enter your information in the fields below.</p>
+      <!-- Create a form that asks for user email address, phone number, and DOB-->
+      <section> 
+        <form action="#null" method="post">
+          <fieldset>
+            <legend>Info Box</legend>
+            <h2>My Info</h2>
+            <p>Please enter your information in the fields below.</p>
 
-          <!-- 1. user's email adress -->
-          <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email_field" placeholder="email here" autocapitalize="off" autocomplete="off" autocorrect="off">
-          </div>
+            <!-- 1. user's email adress -->
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email_field" placeholder="email here" autocapitalize="off" autocomplete="off" autocorrect="off">
+            </div>
 
-          <!-- 2. phone number -->
-          <div>
-            <label for="phonenumber">Phone Number:</label>
-            <input type="tel" id="phonenumber" name="phone_field" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" autocomplete="off" autocorrect="off">
-          </div>
+            <!-- 2. phone number -->
+            <div>
+              <label for="phonenumber">Phone Number:</label>
+              <input type="tel" id="phonenumber" name="phone_field" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" autocomplete="off" autocorrect="off">
+            </div>
 
-          <!-- 3. date of birth -->
-          <div>
-            <label for="dateofbirth">Date of birth:</label>
-            <input type="date" id="dateofbirth" name="D0B" autocapitalize="off" autocomplete="off" autocorrect="off">
-          </div>
+            <!-- 3. date of birth -->
+            <div>
+              <label for="dateofbirth">Date of birth:</label>
+              <input type="date" id="dateofbirth" name="D0B" autocapitalize="off" autocomplete="off" autocorrect="off">
+            </div>
 
-        </fieldset>
+          </fieldset>
 
-        <!-- 4. submit + reset button -->
-        <fieldset>
-          <legend>Submit</legend>
-          <div>
-            <label for="submitbutton">Submit: </label>
-            <input type="submit" id="submitbutton" value="SUBMIT">
-          </div>
-          <div>
-            <label for="submitbutton">Reset: </label>
-            <input type="reset" id="resetbutton" value="RESET">
-          </div>
-        </fieldset>
+          <!-- 4. submit + reset button -->
+          <fieldset>
+            <legend>Submit</legend>
+            <div>
+              <label for="submitbutton">Submit: </label>
+              <input type="submit" id="submitbutton" value="SUBMIT">
+            </div>
+            <div>
+              <label for="submitbutton">Reset: </label>
+              <input type="reset" id="resetbutton" value="RESET">
+            </div>
+          </fieldset>
 
-        <input type="hidden" name="hidden_field" value="Jacob Huebner">
+          <input type="hidden" name="hidden_field" value="Jacob Huebner">
 
-      </form>
+        </form>
 
-    </section>
-
+      </section>
+    </div>
     <!-- footer -->
-    <div id="footer">
-      <div id="address">
-        <p>Contact</p>
+    <footer>
+      <div>
+        <h2>Contact</h2>
         <p><strong>Author:</strong> Jacob Huebner - <strong>Github:</strong> <a href="https://github.com/JakerHuber"> JakerHuber</a></p>
         <p>If you have any questions, please email me at: <a href="mailto:jhuebner@hawk.iit.edu">jhuebner@hawk.iit.edu</a></p>
       </div>
-    </div>
-
-  </body>
+    </footer>
+  </body> 
 </html>

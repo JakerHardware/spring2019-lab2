@@ -20,6 +20,6 @@ a user’s email address, phone number, and date of birth. There should also be 
   * Include a set of normalization styles for your forms (such as the Form area of Normalize.css)
   * Create a second CSS file to stylalize the form between a scroll friendly mobile first version, and a sectioned desktop version.
 
-3. [ ] Finally, post a link to your Github repository and live link for this lab to your Basecamp file. 
+3. [x] Finally, post a link to your Github repository and live link for this lab to your Basecamp file. 
 
   * As with all labs, be sure that you are doing multiple, granular/atomic commits as you complete your work.

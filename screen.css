@@ -6,50 +6,70 @@
 /* pixel = base * em */
 /* em = target_px / base_px */
 /* line height ( line-height = font-size * ratio). */
-
 html {
     font-family: 'Open Sans', sans-serif;
-    background-color: azure;
+    background-color: #EAF9EF;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
-label {
-    background-color: white;
+header {
+
+}
+
+body {
+
+}
+
+footer {
+
 }
 
 /* 480px Break Point 0: Default*/
 @media screen and (max-width: 479px) {
     body {
-        font-size: 0.694em; /* Base (1em = 16px) */
-        line-height: 0.833em; /* (1.618em == 25.888px = 16px * 1.618em)*/ /* same as line height */
+        font-size: 1em; /* Base (1em = 16px) */
+        line-height: 1.2em; /* (1.618em == 25.888px = 16px * 1.618em)*/ /* same as line height */
     }
-
-    label{
-
-    }
-
-    p, h1, h2, body{ padding: 0.833em 0.833em 0.833em 0.833em;
-        display: inline-block;/* same as line height */} 
 
     fieldset {
         border: 2px groove;
-    }
-
-    div {
-        padding-bottom: 0.833em;
     }
 }
 
 /* 480px Break Point 1: Extra Small Devices, Phones */
 @media screen and (min-width: 480px) {
+    body {
+        font-size: 1.2em; /* Base (1em = 16px) */
+        line-height: 1.44em; /* (1.618em == 25.888px = 16px * 1.618em)*/ /* same as line height */
+    }
 
+    fieldset {
+        border: 2px groove;
+    }
 }
 
 /* 768px Break Point 2: Small Devices, Tablets */
 @media screen and (min-width: 768px) {
+    body {
+        font-size: 1.44em; /* Base (1em = 16px) */
+        line-height: 1.728em; /* (1.618em == 25.888px = 16px * 1.618em)*/ /* same as line height */
+    }
 
+    fieldset {
+        border: 2px groove;
+    }
 }
 
 /* 992px Break Point 3: Medium computers */
 @media screen and (min-width: 992px) {
+    body {
+        font-size: 1.728em; /* Base (1em = 16px) */
+        line-height: 2.074em; /* (1.618em == 25.888px = 16px * 1.618em)*/ /* same as line height */
+    }
 
+    fieldset {
+        border: 2px groove;
+    }
 }

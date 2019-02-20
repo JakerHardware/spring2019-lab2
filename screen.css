@@ -1,90 +1,55 @@
 /* stylalize the form between a scroll friendly mobile first version, and a sectioned desktop version.*/
-/* font size =  16px (Open Sans)*/
+/* font size =  16px (Open Sans) */
+/* viewport = (viewport min width) */
+/* padding = (ratio * font size) */
+/* rounded maximum text area(container) = (viewport - padding) */
+/* pixel = base * em */
+/* em = target_px / base_px */
 /* line height ( line-height = font-size * ratio). */
 
 html {
     font-family: 'Open Sans', sans-serif;
     background-color: azure;
-    font-size: 1em; /* Base (1em = 16px) */
-    line-height: 1.618em; /* (1.618em == 25.888px = 16px * 1.618em)*/
 }
 
 label {
-    display: block;
     background-color: white;
-    text-align: center;
 }
 
 /* 480px Break Point 0: Default*/
 @media screen and (max-width: 479px) {
     body {
-        font-size: 1em; /* (1em = 16px) */
-        line-height: 1.618em; /* (1.618em == 25.888px = 16px * 1.618em)*/
+        font-size: 0.694em; /* Base (1em = 16px) */
+        line-height: 0.833em; /* (1.618em == 25.888px = 16px * 1.618em)*/ /* same as line height */
     }
-    
-    label {
-        display: inline-block;
-        color: white;
-        background-color: skyblue;
+
+    label{
+
+    }
+
+    p, h1, h2, body{ padding: 0.833em 0.833em 0.833em 0.833em;
+        display: inline-block;/* same as line height */} 
+
+    fieldset {
+        border: 2px groove;
     }
 
     div {
-        display: inline;
+        padding-bottom: 0.833em;
     }
 }
 
 /* 480px Break Point 1: Extra Small Devices, Phones */
 @media screen and (min-width: 480px) {
-    body {
-        font-size: 1.618em; /* (1.618em = 25.888px) */
-        line-height: 2.618em ; /* (2.618em == 41.887px = 25.888px * 1.618em)*/
-    }
 
-    label {
-        display: inline-block;
-        color: white;
-        background-color: skyblue;
-    }
-
-    div {
-        display: inline;
-    }
 }
 
 /* 768px Break Point 2: Small Devices, Tablets */
 @media screen and (min-width: 768px) {
-    body {
-        font-size: 4.236em; /* (4.236em = 67.77px) */
-        line-height: 6.854em, ; /* (2.618em == 109.66px = 41.887px * 1.618em)*/
-    }
 
-    label {
-        display: inline-block;
-        color: white;
-        background-color: skyblue;
-
-    }
-
-    div {
-        display: inline;
-    }
 }
 
-/* 992px Break Point 3: Medium Devices, Desktops */
+/* 992px Break Point 3: Medium computers */
 @media screen and (min-width: 992px) {
-    body {
-        font-size: 4.236em; /* (4.236em = 67.77px) */
-        line-height: 6.854em, ; /* (2.618em == 109.66px = 41.887px * 1.618em)*/
-    }
 
-    label {
-        display: inline-block;
-        color: white;
-        background-color: skyblue;
-    }
-
-    div {
-        display: inline;
-
-    }
 }

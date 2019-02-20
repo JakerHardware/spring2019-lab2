@@ -11,12 +11,6 @@ html {
     background-color: #757575;
 }
 
-#wrapper {
-    background-color: #FBFBFF;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 header {
     text-align: center;
     overflow: hidden;
@@ -30,47 +24,108 @@ footer {
     padding-bottom: 10px;
 }
 
-body {
-    font-size: 1em; 
-    line-height: 1.2em;
-}
-
 section {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #FBFBFF;
+    text-align: center;
 }
 
-fieldset {
-    border: 4px groove;
+div {
+    display: block;
 }
 
-h1 {
-    font-size: 1.728em; 
-    line-height: 2.074em;
+#wrapper {
+    background-color: #FBFBFF;
+    padding-left: 10px;
+    padding-right: 10px;
+    display:block;
 }
 
-h2 {
-    font-size: 1.44em; 
-    line-height: 1.728em;
+label {
+    display: inline;
+}
+/* less than 480px Break Point 1: very smol screens uwu */
+@media screen and (max-width: 479px) {
+    body {
+        font-size: 0.833em; 
+        line-height: 1em;
+    }
+
+    section {
+        text-align: center;
+    }
+
+    fieldset {
+        border: 2px groove;
+    }
+
+    h1 { 
+        font-size: 1.44em; 
+        line-height: 1.728em;
+    }
+
+    h2 { 
+        font-size: 1.2em; 
+        line-height: 1.44em;
+    }
+
+    h3 { 
+        font-size: 1em; 
+        line-height: 1.2em;
+    }
+
+    p {
+        padding-top: 0.0835em;
+        padding-bottom: 0.0835em;
+    }   
 }
 
-h3 { 
-    font-size: 1.2em; 
-    line-height: 1.44em;
-}
-
-p {
-    padding-top: 0.1em;
-    padding-bottom: 0.1em;
-}
-
-
-/* 480px Break Point 1: Extra Small Devices, Phones */
+/* 480px Break Point 2: Extra Small Devices, Phones */
 @media screen and (min-width: 480px) {
+    body {
+        font-size: 1em; 
+        line-height: 1.2em;
+    }
+
+    section {
+        text-align: center;
+    }
+
+    fieldset {
+        border: 2px groove;
+    }
+
+    h1 {
+        font-size: 1.728em; 
+        line-height: 2.074em;
+    }
+
+    h2 {
+        font-size: 1.44em; 
+        line-height: 1.728em;
+    }
+
+    h3 { 
+        font-size: 1.2em; 
+        line-height: 1.44em;
+    }
+
+    p {
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+    }   
+}
+
+/* 768px Break Point 3: Small Devices, Tablets */
+@media screen and (min-width: 768px) {
     body {
         font-size: 1.2em; 
         line-height: 1.44em; 
+    }
+
+    section {
+        text-align: left;
     }
 
     fieldset {
@@ -98,11 +153,15 @@ p {
     }
 }
 
-/* 768px Break Point 2: Small Devices, Tablets */
-@media screen and (min-width: 768px) {
+/* 992px Break Point 4: Medium computers */
+@media screen and (min-width: 992px) {
     body {
         font-size: 1.44em; 
         line-height: 1.728em;
+    }
+
+    section {
+        text-align: left;
     }
 
     fieldset {
@@ -130,11 +189,15 @@ p {
     }
 }
 
-/* 992px Break Point 3: Medium computers */
-@media screen and (min-width: 992px) {
+/* 992px Break Point 5: Large computers, TVs */
+@media screen and (min-width: 1200px) {
     body {
         font-size: 1.728em; 
         line-height: 2.074em; 
+    }
+
+    section {
+        text-align: left;
     }
 
     fieldset {
@@ -155,7 +218,7 @@ p {
         font-size: 2.074em;
         line-height: 2.488em;
     }
-    
+
     p {
         padding-top: 0.173em;
         padding-bottom: 0.173em;

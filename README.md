@@ -7,14 +7,14 @@ Follow the steps below exactly in order to receive full credit.
 
 ## Requirements
 
-1. [ ] In the `index.html` file in this directory, create a form that asks for
+1. [x] In the `index.html` file in this directory, create a form that asks for
 a user’s email address, phone number, and date of birth. There should also be a submit button.
 
   * Use the best HTML `<input>` types
   * Use additional HTML `<input>` attributes to maximize user exprience
   * Use semantically associated `<label>` tags
 
-2. [ ] Then, in the `screen.css` file, do the following:
+2. [x] Then, in the `screen.css` file, do the following:
 
   * Open with Eric Meyer reset
   * Include a set of normalization styles for your forms (such as the Form area of Normalize.css)

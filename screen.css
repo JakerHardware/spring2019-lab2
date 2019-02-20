@@ -27,6 +27,7 @@ header {
 footer {
     text-align: center;
     background-color: #757575;
+    padding-bottom: 10px;
 }
 
 body {
@@ -92,8 +93,8 @@ p {
     }
 
     p {
-        padding-top: 0.1em;
-        padding-bottom: 0.1em;
+        padding-top: 0.12em;
+        padding-bottom: 0.12em;
     }
 }
 
@@ -122,6 +123,11 @@ p {
         font-size: 1.728em; 
         line-height: 2.074em;
     }
+
+    p {
+        padding-top: 0.144em;
+        padding-bottom: 0.144em;
+    }
 }
 
 /* 992px Break Point 3: Medium computers */
@@ -148,5 +154,10 @@ p {
     h3 {
         font-size: 2.074em;
         line-height: 2.488em;
+    }
+    
+    p {
+        padding-top: 0.173em;
+        padding-bottom: 0.173em;
     }
 }
